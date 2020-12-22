@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="margin-left: 950px;margin-top: 200px;" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:display="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<!--使用ajax异步请求,使提交表单的同时不跳转页面-->
+<script>
+  function send()
+  {
+    $.ajax({
+      url: "/sendemail",  <!--映射地址-->
+      type: "post",      <!--请求方式-->
+      data: {'qq': $("input[name='qq']").val()},   <!--请求的JSON，左边为key，右边为value，注意格式-->
+      dataType: "JSON",
+    });
+  }
+
+  function KeyP(v){
+    document.getElementById("qq1").value = v.value;
+  }
+
+</script>
+<body>
+<div style="margin-left: 50px;">
+  <!--用户表单-->
+  <form action="/registry.action" method="get">
+    <div style="margin-top: 30px;">
+      <div class="form-group">
+        <label for="username" stype="display:inline;">账户：</label>
+        <input type="text" class="form-control" name="username" id="username" style="display:inline;width:200px;"
+               autocomplete="off" />
+      </div>
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="password" style="display:inline;">密码：</label>
+        <input type="password" class="form-control" name="password" id="password" style="display:inline;width:200px;"
+               autocomplete="off" />
+        <div>
+          <input type="text" class="form-control" name="code" style="width: 150px;height: 30px;margin-top: 60px;" placeholder="输入验证码">
+        </div>
+      </div>
+      <div ><button type="submit" class="btn btn-primary" style="margin-top: 80px;margin-left: 100px;">注册</button></div>
+    </div>
+    <!--隐藏的表单,与id="qq"的文本框内容同步-->
+    <input name="qq1" id="qq1" type="hidden">
+  </form>
+</div>
+<div style="margin-left: 50px; margin-top: -120px;">
+  <!--验证码表单-->
+  <form id="sendemail" method="post" onsubmit="return false" style="margin-top: -210px;">
+    <div style="display: inline-flex;">
+      <div><input type="text" class="form-control" id="qq" name="qq" onkeyup="KeyP(this)" style="width: 150px;height: 30px;"
+                  placeholder="请输入收件人qq号">
+      </div>
+      <div><label class="input-group-addon" style="width: 20px;height: 30px;">@qq.com</label>
+      </div>
+    </div>
+    <br>
+    <div style="">
+      <div><button class="input-group-addon" onclick="send();" style="width: 85px;height: 30px;margin-left: 150px;margin-top: 11px;">获取验证码</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+
+</html>

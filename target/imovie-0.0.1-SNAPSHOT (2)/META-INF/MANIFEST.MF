@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Implementation-Title: imovie
+Premain-Class: com.atzzuli.imovie
+Implementation-Version: 0.0.1-SNAPSHOT
+Class-Path: lib/fastjson-1.2.7.jar lib/spring-boot-starter-thymeleaf-2
+ .1.9.RELEASE.jar lib/spring-boot-starter-2.1.9.RELEASE.jar lib/spring
+ -boot-2.1.9.RELEASE.jar lib/spring-boot-autoconfigure-2.1.9.RELEASE.j
+ ar lib/spring-boot-starter-logging-2.1.9.RELEASE.jar lib/logback-clas
+ sic-1.2.3.jar lib/logback-core-1.2.3.jar lib/log4j-to-slf4j-2.11.2.ja
+ r lib/log4j-api-2.11.2.jar lib/jul-to-slf4j-1.7.28.jar lib/javax.anno
+ tation-api-1.3.2.jar lib/snakeyaml-1.23.jar lib/thymeleaf-spring5-3.0
+ .11.RELEASE.jar lib/thymeleaf-3.0.11.RELEASE.jar lib/attoparser-2.0.5
+ .RELEASE.jar lib/unbescape-1.1.6.RELEASE.jar lib/thymeleaf-extras-jav
+ a8time-3.0.4.RELEASE.jar lib/spring-boot-starter-web-2.1.9.RELEASE.ja
+ r lib/spring-boot-starter-json-2.1.9.RELEASE.jar lib/jackson-databind
+ -2.9.9.3.jar lib/jackson-annotations-2.9.0.jar lib/jackson-core-2.9.9
+ .jar lib/jackson-datatype-jdk8-2.9.9.jar lib/jackson-datatype-jsr310-
+ 2.9.9.jar lib/jackson-module-parameter-names-2.9.9.jar lib/spring-boo
+ t-starter-tomcat-2.1.9.RELEASE.jar lib/tomcat-embed-core-9.0.26.jar l
+ ib/tomcat-embed-el-9.0.26.jar lib/tomcat-embed-websocket-9.0.26.jar l
+ ib/hibernate-validator-6.0.17.Final.jar lib/validation-api-2.0.1.Fina
+ l.jar lib/jboss-logging-3.3.3.Final.jar lib/classmate-1.4.0.jar lib/s
+ pring-web-5.1.10.RELEASE.jar lib/spring-beans-5.1.10.RELEASE.jar lib/
+ spring-webmvc-5.1.10.RELEASE.jar lib/spring-aop-5.1.10.RELEASE.jar li
+ b/spring-context-5.1.10.RELEASE.jar lib/spring-expression-5.1.10.RELE
+ ASE.jar lib/spring-core-5.1.10.RELEASE.jar lib/spring-jcl-5.1.10.RELE
+ ASE.jar lib/spring-boot-starter-data-jdbc-2.1.9.RELEASE.jar lib/sprin
+ g-boot-starter-jdbc-2.1.9.RELEASE.jar lib/HikariCP-3.2.0.jar lib/spri
+ ng-jdbc-5.1.10.RELEASE.jar lib/spring-data-jdbc-1.0.11.RELEASE.jar li
+ b/spring-data-commons-2.1.11.RELEASE.jar lib/spring-tx-5.1.10.RELEASE
+ .jar lib/mybatis-spring-boot-starter-1.3.2.jar lib/mybatis-spring-boo
+ t-autoconfigure-1.3.2.jar lib/mybatis-3.4.6.jar lib/mybatis-spring-1.
+ 3.2.jar lib/mysql-connector-java-8.0.21.jar lib/jedis-3.3.0.jar lib/s
+ lf4j-api-1.7.28.jar lib/commons-pool2-2.6.2.jar lib/spring-boot-start
+ er-mail-2.3.4.RELEASE.jar lib/spring-context-support-5.1.10.RELEASE.j
+ ar lib/jakarta.mail-1.6.5.jar lib/jakarta.activation-1.2.1.jar lib/jq
+ uery-3.5.1.jar
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.4.0
+Main-Class: com.atzzuli.imovie.ImovieApplication
+

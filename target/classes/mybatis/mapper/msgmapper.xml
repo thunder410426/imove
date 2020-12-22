@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atzzuli.imovie.DAO.MsgDAO">
+    <select id="retrieveMovie" resultType="com.atzzuli.imovie.entity.Movie">
+        select * from movie
+    </select>
+
+    <delete id="deleteMovie">
+        delete from movie where name=#{name}
+    </delete>
+
+    <insert id="insertMovie">
+        insert into movie values (#{type},#{name},#{date},#{actors},#{introduction},#{filename},#{picname})
+    </insert>
+</mapper>
+

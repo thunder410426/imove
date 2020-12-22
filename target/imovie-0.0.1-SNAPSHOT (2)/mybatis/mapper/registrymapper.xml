@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--注册mapper-->
+<mapper namespace="com.atzzuli.imovie.DAO.RegistryDAO">
+    <!--注册-->
+    <insert id="registry" >
+        insert into user values (#{username},#{password})
+    </insert>
+
+    <!--判断是否已经注册-->
+    <select id="ifregistry" resultType="java.lang.String">
+        select username from user where username=#{username}
+    </select>
+</mapper>

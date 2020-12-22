@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--登录mapper-->
+<mapper namespace="com.atzzuli.imovie.DAO.LoginDAO">
+    <select id="login" resultType="com.atzzuli.imovie.entity.User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+</mapper>
